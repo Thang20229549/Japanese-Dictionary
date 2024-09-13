@@ -67,6 +67,7 @@
                     function (response) {
                         // Display the response from the server
                         $("#searchResult").html(response);
+                        $(".meaning-phone").click();
                     }).done(
                         function () {
                             // Seperate and show the kanji
