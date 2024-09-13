@@ -1,0 +1,134 @@
+.header{
+    color: aqua;
+    height: 55px;
+    border-style: solid;
+}
+
+#control-btn{
+    display: none;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+}
+.btn-container .btn{
+    margin: 10px;
+}
+
+.navbar{
+    height: 78px;
+    background: blue;
+}
+
+
+.search-bar {   
+    display: grid;
+    grid-template-columns: 9fr 0.5fr;
+    margin: 1% 10% 0% 10%;
+    border-color: #f2f1f0;
+    height: 8vh  ;
+    
+}
+
+
+
+#WordInput{
+    border-radius: 6px;
+}
+
+@media screen and (min-width:768px){
+    #WordInput{
+        font-size: 1.5rem;
+    }
+}
+
+.submit-icon{
+    border:none;
+    background: none;
+    margin-left: -80px;
+}
+
+
+.fa-solid{
+    border: none;
+}
+
+
+
+
+.result {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 16px;
+    margin: 15px 0px 0px 15px;
+}
+
+@media screen and (max-width:500px){
+    .result{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+#searchResult{
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+    font-size: 1.5em;
+    display: block;
+}
+
+.Jp-res{
+    border: inset;
+    margin: 15px 0px 15px 0px ;
+}
+
+.kanji:has(div > div) {
+    background: #f4f4f4;
+}
+
+#searchResult:has(div){
+    background: #f4f4f4;
+}
+
+#searchResult:has(ruby){
+    background: #f4f4f4;
+}
+
+select.language-selector {
+    height: 78px;
+    width: 120px;
+    margin-left: 120px;
+    font-size: large;
+}
+
+.language-selector ruby rt{
+    display: none;
+}
+
+.kan-details {
+    display: none;
+}
+
+
+.kanji {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:500px){
+    .kanji{
+        display: none;
+    }
+}
+
+.btn-phone{
+    display: none;
+}
+
+@media screen and (max-width:500px){
+    .btn-phone{
+        display: block;
+    }
+}
